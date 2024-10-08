@@ -44,7 +44,7 @@ for filename in tqdm(json_files, desc="Reading JSON files"):
         tasks.append((file_path, target_folder))
 
 # 多线程移动文件，避免文件占用问题
-with ThreadPoolExecutor(max_workers=5) as executor:
+with ThreadPoolExecutor(max_workers=15) as executor:
     futures = [executor.submit(move_file, task[0], task[1]) for task in tasks]
     for _ in tqdm(as_completed(futures), total=len(futures), desc="Moving Files"):
         pass
