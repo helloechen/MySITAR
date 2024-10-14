@@ -1,7 +1,7 @@
 import os
 import shutil
 import random
-project_name = "logging-log4j2"
+project_name = "biojava"
 
 positive_folder = './' + project_name+'/POSITIVE'
 negative_folder = './' + project_name+'/NEGATIVE'
