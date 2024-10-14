@@ -1,6 +1,8 @@
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import confusion_matrix
 from utils import flat_scores,load_all_data_from_folder
 import time
+import pandas as pd
 import numpy as np
 import sys
 from colorama import Fore, Style
@@ -38,6 +40,8 @@ print("------------------------------------------------------------------------"
 print(Fore.RED+"f1_score:{0}\nPrecision:{1}\nrecall:{2}".format(f1, pre, recall)+Style.RESET_ALL)
 time3 = time.time()
 print("------------------------------------------------------------------------")
-print("dataset and training: ",time2 - time1)
-print("analysing:", time3 - time2)
+cm = confusion_matrix(Ytest, Ypredict)
+cm_df = pd.DataFrame(cm, index=["Actual 0", "Actual 1"], columns=["Predicted 0", "Predicted 1"])
+print("Confusion Matrix:")
+print(cm_df)
 

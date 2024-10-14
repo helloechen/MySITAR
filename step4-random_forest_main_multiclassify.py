@@ -1,5 +1,7 @@
 from sklearn.ensemble import RandomForestClassifier
 from utils_multi import flat_scores,load_all_data_from_folder
+import pandas as pd
+from sklearn.metrics import confusion_matrix
 import time
 import numpy as np
 import sys
@@ -56,3 +58,11 @@ total_correct = np.sum(np.equal(Ypredict,Ytest))
 print("total_multi_correct_rate")
 print(total_correct/len(Ypredict),total_correct,"in",len(Ypredict))
 print("------------------------------------------------------------------------")
+
+
+cm = confusion_matrix(Ytest, Ypredict)
+labels = np.unique(Ytest)
+cm_df = pd.DataFrame(cm, index=[f"Actual {label}" for label in labels],
+                     columns=[f"Predicted {label}" for label in labels])
+print("Confusion Matrix:")
+print(cm_df)

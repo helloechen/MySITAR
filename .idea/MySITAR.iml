@@ -7,6 +7,8 @@
       <excludeFolder url="file://$MODULE_DIR$/biojava" />
       <excludeFolder url="file://$MODULE_DIR$/experiment_data" />
       <excludeFolder url="file://$MODULE_DIR$/logging-log4j2" />
+      <excludeFolder url="file://$MODULE_DIR$/gson" />
+      <excludeFolder url="file://$MODULE_DIR$/pmd" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.12" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
