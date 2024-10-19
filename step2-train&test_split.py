@@ -1,7 +1,7 @@
 import os
 import shutil
 import random
-project_name = "biojava"
+project_name = "zeppelin"
 
 positive_folder = './' + project_name+'/POSITIVE'
 negative_folder = './' + project_name+'/NEGATIVE'

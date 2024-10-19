@@ -7,7 +7,7 @@ from sklearn.metrics import confusion_matrix
 import sys
 from colorama import Fore, Style
 
-project_name = "biojava"
+project_name = ""
 
 time1 = time.time()
 folder_path = './'+project_name+'/TRAIN/ALL'

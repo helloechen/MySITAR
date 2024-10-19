@@ -16,7 +16,7 @@ from colorama import Fore, Style
 # elif data['test_typ'] == "EDIT":
 #     Y = 3
 
-project_name = "biojava"
+project_name = "zeppelin"
 
 time1 = time.time()
 folder_path = './'+project_name+'/TRAIN/ALL'

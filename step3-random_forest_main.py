@@ -8,7 +8,7 @@ import sys
 from colorama import Fore, Style
 
 
-project_name = "biojava"
+project_name = "activemq"
 
 time1 = time.time()
 folder_path = './'+project_name+'/TRAIN/ALL'

@@ -9,6 +9,14 @@
       <excludeFolder url="file://$MODULE_DIR$/logging-log4j2" />
       <excludeFolder url="file://$MODULE_DIR$/gson" />
       <excludeFolder url="file://$MODULE_DIR$/pmd" />
+      <excludeFolder url="file://$MODULE_DIR$/jackson-core" />
+      <excludeFolder url="file://$MODULE_DIR$/james-project" />
+      <excludeFolder url="file://$MODULE_DIR$/cloudstack" />
+      <excludeFolder url="file://$MODULE_DIR$/commons-math" />
+      <excludeFolder url="file://$MODULE_DIR$/geode" />
+      <excludeFolder url="file://$MODULE_DIR$/jruby" />
+      <excludeFolder url="file://$MODULE_DIR$/jsoup" />
+      <excludeFolder url="file://$MODULE_DIR$/storm" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.12" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
